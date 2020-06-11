@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- *main
+ *main - Entry point
+ *Positive, Negative or Zero
  *Return: 0 if the programming ran to completion
  */
 int main(void)
