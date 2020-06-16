@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *times_table - function that prints the 9 times table, starting with 0.,
+ *times_table - function that prints the 9 times table, starting with 0.
  *
  *Return: void
  */
@@ -19,7 +19,12 @@ _putchar('0' + ((x * y) % 10));
 }
 else
 {
+if (y != 0)
+{
 _putchar(' ');
+_putchar('0' + ((x * y) % 10));
+}
+else
 _putchar('0' + ((x * y) % 10));
 }
 if (y < 9)
@@ -27,8 +32,7 @@ if (y < 9)
 _putchar(',');
 _putchar(' ');
 }
-else
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
