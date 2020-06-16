@@ -19,6 +19,6 @@ _putchar(letter);
 letter++;
 }
 _putchar('\n');
- c++;
+c++;
 }
 }
