@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  *print_to_98 - function that prints all natural numbers from n to 98
  *@n: first number
@@ -6,27 +7,27 @@
  */
 void print_to_98(int n)
 {
-int a, h, t, o;
+int a, b, c, d;
 while (n != 98)
 {
-a = _abs(n), h = a / 100, t = a / 10 % 10, o = a  % 10;
-if (h > 0)
+a = abs(n), b = a / 100, c = a / 10 % 10, d = a  % 10;
+if (b > 0)
 {
 a != n ? _putchar('-') : a;
-_putchar(h + '0');
-_putchar(t + '0');
-_putchar(o + '0');
+_putchar('0' + b);
+_putchar('0' + c);
+_putchar('0' + d);
 }
-else if (t > 0)
+else if (c > 0)
 {
 a != n ? _putchar('-') : a;
-_putchar(t + '0');
-_putchar(o + '0');
+_putchar('0' + c);
+_putchar('0' + d);
 }
 else
 {
 a != n ? _putchar('-') : a;
-_putchar(o + '0');
+_putchar('0' + d);
 }
 _putchar(',');
 _putchar(' ');
