@@ -6,66 +6,33 @@
  */
 void print_to_98(int n)
 {
-int x;
-if (n < 99)
+int a, h, t, o;
+while (n != 98)
 {
-for (x = n; x < 99; x++)
+a = _abs(n), h = a / 100, t = a / 10 % 10, o = a  % 10;
+if (h > 0)
 {
-if (x >= 0)
-{
-if (x < 10)
-_putchar('0' + x);
-else
-{
-_putchar('0' + (x  / 10));
-_putchar('0' + (x  % 10));
+a != n ? _putchar('-') : a;
+_putchar(h + '0');
+_putchar(t + '0');
+_putchar(o + '0');
 }
-}
-else
+else if (t > 0)
 {
-if (x > -10)
-{
-_putchar('-');
-_putchar('0' - x);
+a != n ? _putchar('-') : a;
+_putchar(t + '0');
+_putchar(o + '0');
 }
 else
 {
-_putchar('-');
-_putchar('0' - (x  / 10));
-_putchar('0' - (x  % 10));
+a != n ? _putchar('-') : a;
+_putchar(o + '0');
 }
-}
-if (x != 98)
-{
 _putchar(',');
 _putchar(' ');
+n < 98 ? n++ : n--;
 }
-else
+_putchar('9');
+_putchar('8');
 _putchar('\n');
-}
-}
-else
-{
-for (x = n; x >= 98; x--)
-{
-if (x > 99)
-{
-_putchar('0' + x / 100);
-_putchar('0' + x / 10 % 10);
-_putchar('0' + x % 10);
-}
-else
-{
-_putchar('0' + x / 10);
-_putchar('0' + x % 10);
-}
-if (x != 98)
-{
-_putchar(',');
-_putchar(' ');
-}
-else
-_putchar('\n');
-}
-}
 }
