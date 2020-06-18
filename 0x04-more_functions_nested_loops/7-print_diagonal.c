@@ -8,12 +8,12 @@
 void print_diagonal(int n)
 {
 int control, spaces;
-for (control = 0 ; control < n; control ++)
+for (control = 0 ; control < n; control++)
 {
 for (spaces = 0 ; spaces < control; spaces++)
 _putchar(' ');
 _putchar('\\');
-_putchar('\n');      
+_putchar('\n');
 }
 if (n <= 0)
 _putchar('\n');
