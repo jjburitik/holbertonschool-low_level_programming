@@ -16,8 +16,8 @@ spaces = 1;
 pounds = 1;
 for (spaces = 1; spaces <= (size - rows); spaces++)
 _putchar(' ');
-for (pounds = 1; pounds <= rows; pounds++)	
+for (pounds = 1; pounds <= rows; pounds++)
 _putchar('#');
-_putchar('\n');      
+_putchar('\n');
 }
 }
