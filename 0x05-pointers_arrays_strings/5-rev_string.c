@@ -15,6 +15,6 @@ for (b = 0; b <= a / 2; b++)
 {
 temp = s[b];
 s[b] = s[a - b];
-s[a -b] = temp;
+s[a - b] = temp;
 }
 }
